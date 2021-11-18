@@ -1,12 +1,14 @@
 package theory.collection.hashMap;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 
 public class Test {
     public static void main(String[] args) {
         HashMap<Human, Integer> hashMap = new HashMap<>();
-
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        arrayList.stream();
         Human human1 = new Human("Max", 21);
         Human human2 = new Human("Pasha", 19);
         Human human3 = new Human("Sasha", 23);
