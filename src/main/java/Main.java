@@ -1,11 +1,27 @@
-import theory.equals.Test;
+
+import theory.Test1;
 
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        String str = "8 3 -5 42 -1 0 0 -9 4 7 4 -4";
-        Object[] ar = Arrays.stream(str.split(" ")).map(Integer::parseInt).sorted().toArray();
-        System.out.println(ar[ar.length - 1].toString() + " " + ar[0].toString());
+        List<Integer> array = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 0, 9, 10);
+
+        List<Integer> newAr = array.stream().sorted().collect(Collectors.toList());
+        int index = 0;
+        System.out.println(newAr);
+        for (int i = 0; i < array.size(); i++) {
+            int a = newAr.get(i);
+            if (i != a) {
+                index = i;
+                break;
+            }
+        }
+        Test1 test1 = new Test1();
+        test1.setCount(2);
+
+         //        System.out.print(index);
     }
 }
