@@ -1,8 +1,6 @@
 package theory.collection.hashMap;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.*;
 
 public class Test {
     public static void main(String[] args) {

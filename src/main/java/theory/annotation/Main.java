@@ -1,8 +1,7 @@
 package theory.annotation;
 
 import jdk.jfr.Name;
-
-import java.lang.annotation.Target;
+//import org.springframework.stereotype.Controller;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,6 +11,7 @@ public class Main {
     }
 }
 @Name("Maon")
+//@Controller
 class Man {
     private String firstname;
     private String lastname;
@@ -20,5 +20,4 @@ class Man {
         this.firstname = firstname;
         this.lastname = lastname;
     }
-
 }
