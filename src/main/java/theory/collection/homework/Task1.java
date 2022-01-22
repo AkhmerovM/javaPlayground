@@ -1,6 +1,6 @@
 package theory.collection.homework;
 
-public class CodeWars {
+public class Task1 {
     public static void main(String[] args) {
         System.out.println(findNb(1901762086401473409L));
     }
