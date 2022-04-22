@@ -1,7 +1,6 @@
 package theory.classLoader;
 
 import jdk.net.NetworkPermission;
-import org.springframework.core.KotlinDetector;
 
 import java.sql.DriverManager;
 import java.util.ArrayList;
@@ -22,7 +21,6 @@ public class Main {
         Class<Rabbit> clazz = (Class<Rabbit>) rabbit.getClass();
         System.out.println(clazz.getClassLoader());
         System.out.println(Main.class.getClassLoader());
-        System.out.println(KotlinDetector.class.getClassLoader());
 
     }
 }
